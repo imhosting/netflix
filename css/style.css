@@ -1,0 +1,737 @@
+/**************************
+
+Website Designed by CounterMind on Marketing-Rhino.com
+https://www.marketing-rhino.com/
+It is forbidden to re-sell this landing page without Author Permission.
+
+**************************/
+/*--------------------------------------------------------------
+# Basics
+--------------------------------------------------------------*/
+body {
+	overflow-x: hidden;
+	background: #f1f1f1:
+}
+html {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+ul {
+	list-style: none;
+}
+textarea, input, a, button { 
+	outline: none;
+}
+#app-particles {
+	position: fixed;
+	width: 60%;
+	height: 100vh;
+	right: 0;
+	top: 0;
+	z-index: -3;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 16px;
+	color: #fff;
+}
+a {
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-ms-transition: all 0.2s ease-in-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
+}
+a:hover, a:visited, a:focus, a:active, button:hover, button:visited, button:active, button:focus; {
+	text-decoration: none !important;
+	outline: none !important;
+}
+::selection {
+	background: #000;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #000;
+	color: #fff;
+	text-shadow: none;
+}
+
+/*--------------------------------------------------------------
+# Animate css
+--------------------------------------------------------------*/
+.animation-delay-100 {
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
+.animation-delay-200 {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+.animation-delay-300 {
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+}
+.animation-delay-400 {
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+.animation-delay-600 {
+	-webkit-animation-delay: 0.6s;
+	animation-delay: 0.6s;
+}
+.animation-delay-800 {
+	-webkit-animation-delay: 0.8s;
+	animation-delay: 0.8s;
+}
+.animation-delay-1000 {
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.animation-delay-2000 {
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+}
+
+/*--------------------------------------------------------------
+# Left Side
+--------------------------------------------------------------*/
+.left-side-wrapper {
+	position: fixed;
+	min-height: 100vh;
+	left: 0;
+	top: 0;
+	width: 50%;
+	padding: 300px 100px 70px 100px;
+}
+.left-side-wrapper:before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 15px;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: #263ebd;
+	z-index: -2;
+	clip-path: polygon(0% 0%, 100% 0%, 92% 100%, 0 100%);
+}
+.left-side-wrapper:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: #3353fc;
+	z-index: -1;
+	clip-path: polygon(0% 0%, 100% 0%, 92% 100%, 0 100%);
+}
+header {
+	position: relative;
+	text-align: center;
+}
+.app-icon-big-wrapper {
+	display: table;
+	margin: 0 auto;
+	padding: 15px;
+	border-radius: 50%;
+	background: #263ebd;
+}
+.app-icon-big-wrapper img {
+	border-radius: 50%;
+}
+.header-text {
+	position: relative;
+}
+.header-text h1 {
+	font-size: 6.2em;
+	color: #fff;
+	text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+	line-height: 1;
+	margin: 15px 0 20px 0;
+	font-weight: 700;
+}
+.header-text h1 span {
+	font-weight: 300;
+	display: block;
+}
+.header-text p {
+	font-size: 2em;
+	max-width: 700px;
+	margin: 0 auto;
+	color: #fff;
+	font-weight: 300;
+	letter-spacing: 3px;
+}
+.downloader-status-wrapper {
+	position: relative;
+	margin: 30px auto 0 auto;
+}
+.downloader-status {
+	display: table;
+	margin: 0 auto;
+}
+.status-row {	
+	text-align: center;
+	margin: 0 5px;
+	position: relative;
+	z-index: 5;
+	background: #263ebd;
+	display: inline-block;
+	padding: 20px 25px;
+	border-radius: 3px;
+}
+.status-label {
+	font-size: 0.8em;
+	font-weight: 300;
+	text-transform: uppercase;
+	display: block;
+	line-height: 1;
+	margin: 0 0 5px 0;
+}
+.status-dynamic {
+	font-size: 1.2em;
+	font-weight: 700;
+	display: block;
+	line-height: 1;
+}
+
+/*--------------------------------------------------------------
+# Right Side
+--------------------------------------------------------------*/
+.right-side-wrapper {
+	position: relative;
+	min-height: 100vh;
+	padding: 300px 50px 70px 50px;
+}
+.app-downloader-section {
+	position: relative;
+	padding: 15vh 0 80px 0;
+}
+.app-downloader-wrapper {
+	max-width: 600px;
+	margin: 0 auto;
+	background: #fff;
+	position: relative;
+	border-radius: 15px;
+	color: rgb(17,30,41);
+	box-shadow: 0 10px 35px 0 rgba(25,50,165,0.2);
+	overflow: hidden;
+}
+.app-downloader-header {
+	position: relative;
+	background: #3353fc;
+	color: #fff;
+	padding: 30px 30px 30px;
+	border-bottom: 5px solid #263ebd;
+}
+.app-downloader-header-content {
+	position: relative;
+	display: table;
+	margin: 0 auto;
+}
+.app-icon-wrapper {
+	position: relative;
+	text-align: center;
+}
+.app-icon-wrapper img {
+	position: relative;
+	max-width: 90px;
+}
+.app-downloader-header-intro {
+	position: relative;
+	text-align: center;
+}
+.app-downloader-header-intro h1 {
+	font-weight: 700;
+	margin: 0;
+	font-size: 3em;
+	text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+	line-height: 1;
+	color: #fff;
+}
+.app-downloader-content {
+	text-align: center;
+	padding: 60px 50px 50px 50px;
+	position: relative;
+}
+.platform-select-wrapper {
+	position: relative;
+}
+.platform-item {
+	background: #f1f1f1;
+	border: 3px solid #eee;
+	border-radius: 20px;
+	padding: 10px 15px;
+    position: relative;
+	text-align: center;
+    cursor: pointer;	
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-ms-transition: all 0.2s ease-in-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
+	animation-duration: 0.4s;
+}
+.platform-item i {
+	color: #3353fc;
+	font-size: 9em;
+	display: block;
+}
+.platform-item span {
+	color: #333;
+	text-transform: uppercase;
+	display: block;
+	font-weight: 700;
+	font-size: 1.4em;
+	margin-top: 3px;
+}
+.platform-item.active {
+	background: #3353fc;
+	cursor: default;
+	border: 3px solid #263ebd;
+}
+.platform-item.active i {
+	color: #fff;
+}
+.platform-item.active span {
+	color: #fff;
+	text-shadow: none;
+}
+
+/*--------------------------------------------------------------
+# Processing
+--------------------------------------------------------------*/
+.processing-modal-wrapper {
+	position: relative;
+}
+.processing-content {
+	position: relative;
+}
+.console-process-msg-wrapper {
+	position: relative;
+	margin: 30px 0 0 0;
+	min-height: 90px;
+}
+.console-process-msg {
+	font-size: 1.8em;
+	font-weight: 700;
+	text-align: center;
+}
+.console-process-icon-wrapper {
+	text-align: center;
+}
+.console-process-icon-wrapper i {
+	font-size: 8em;
+	color: #3353fc;
+}
+.console-process-loading-bar {
+	margin: 30px auto 0 auto;
+	background: #ddd;
+	overflow: hidden;
+	border-radius: 10px;
+	max-width: 320px;
+}
+.console-process-loading-bar div {
+	font-size: 22px;
+	text-indent: 9999px;
+	overflow: hidden;
+	background: #3353fc;
+}
+.console-process-msg-success, .console-process-icon-wrapper .console-process-msg-success i {
+	color: #00c762;
+}
+.console-process-msg-error, .console-process-icon-wrapper .console-process-msg-error i {
+	color: #fc4349;
+}
+ 
+/*--------------------------------------------------------------
+# Human Verification
+--------------------------------------------------------------*/
+.mfp-bg {
+	background: #3353fc;
+	opacity: 0.95;
+}
+.human-verification-wrapper {
+	position: relative;
+}
+.verification-modal-wrapper {
+	max-width: 520px;
+	width: 92%;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 20px;
+	border: 5px solid #263ebd;
+	box-shadow: 0 10px 35px 0 rgba(25,50,165,0.2);
+	position: relative;
+	color: #333;
+	text-align: center;
+}
+.verification-modal-wrapper .processing-content {
+    padding: 55px 40px 55px;
+    position: relative;
+}
+.verification-app-downloader h3 {
+	margin: 10px 0 20px 0;
+	font-size: 1.6em;
+	font-weight: 300;
+}
+.verification-app-downloader h3 span {
+	display: block;
+	font-weight: 700;
+	font-size: 1.6em;
+}
+.verification-app-downloader-icon {
+	max-width: 120px;
+	border-radius: 50%;
+	border: 5px solid #3353fc;
+	margin: 0 auto;
+	display: table;
+}
+.human-verification-wrapper p {
+	color: #333;
+	font-size: 1.2em;
+	margin: 0 auto;
+	display: table;
+}
+.human-verification-wrapper i {
+	font-size: 2em;
+	display: block;
+	text-align: center;
+	margin: 15px auto;
+	color: #3353fc;
+}
+a#verification-button {
+	color: #fff !important;
+}
+.h-v-time-left-wrapper {
+	color: #333;
+	font-size: 1em;
+	margin-bottom: 15px;
+}
+#human_verification_timer_time {
+	color: #333;
+	display: block;
+	font-weight: 700;
+	line-height: 1;
+}
+
+/*--------------------------------------------------------------
+# Button
+--------------------------------------------------------------*/
+.button-wrapper {
+	margin: 50px auto 0 auto;
+}
+.button {
+	background: #3353fc;
+	display: table;
+	margin: 0 auto;
+	padding: 20px 35px 20px 35px;
+	color: #fff;
+	border: 3px solid #263ebd;
+	border-radius: 100px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 2em;
+	text-decoration: none !important;
+	position: relative;
+	cursor: pointer;
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-ms-transition: all 0.2s ease-in-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
+}
+.button:hover {
+	background: #263ebd;
+	border: 3px solid #3353fc;
+	color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Responsive Design
+--------------------------------------------------------------*/
+@media screen and (max-width: 1920px) {
+	.right-side-wrapper {
+		padding: 150px 50px 70px 50px;
+	}
+	.left-side-wrapper {
+		padding: 110px 100px 70px 100px;
+	}
+	.header-content h1 {
+		font-size: 7em;
+	}
+	.header-content p {
+		font-size: 1.6em;
+	}
+}
+@media screen and (max-width: 1440px) {
+	.left-side-wrapper {
+		padding: 100px 80px 70px 80px;
+	}
+	.right-side-wrapper {
+		padding: 150px 0 70px 0;
+	}
+	.header-text h1 {
+		font-size: 5em;
+	}
+}
+@media screen and (max-width: 1280px) {
+	.left-side-wrapper {
+		padding: 100px 40px 70px 40px;
+	}
+	.right-side-wrapper {
+		padding: 100px 30px 70px 30px;
+	}
+	.header-text h1 {
+		font-size: 4em;
+	}
+}
+@media screen and (max-width: 993px) {
+	#app-particles {
+		width: 100%;
+	}
+	.container-fluid {
+		padding: 0;
+	}
+	.left-side-wrapper {
+		position: relative;
+		min-height: auto;
+		width: 100%;
+		padding: 40px 30px 80px 30px;
+	}
+	.left-side-wrapper:before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 15px;
+		height: 100%;
+		width: 100%;
+		background: #263ebd;
+		z-index: -2;
+		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 94%);
+	}
+	.left-side-wrapper:after {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background: #3353fc;
+		z-index: -1;
+		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 94%);
+	}
+	.right-side-wrapper {
+		padding: 40px 80px 70px 80px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.app-icon-big-wrapper {
+		padding: 7px;
+	}
+	.app-icon-big-wrapper img {
+		max-width: 120px;
+	}
+	.header-text h1 {
+		font-size: 3.6em;
+	}
+	.header-text p {
+		font-size: 1.6em;
+	}
+	.app-downloader-header-intro h1 {
+		font-size: 2.6em;
+	}
+	.platform-item i {
+		font-size: 7em;
+	}
+	.right-side-wrapper {
+		min-height: auto;
+	}
+}
+@media screen and (max-width: 550px) {
+	.row-second {
+		display: none;
+	}
+	.right-side-wrapper {
+		padding: 40px 30px 70px 30px;
+	}
+	.button {
+		font-size: 1.6em;
+		width: 100%;
+		padding: 20px 5px;
+	}
+}
+@media screen and (max-width: 440px) {
+	.left-side-wrapper {
+		padding: 20px 20px 60px 20px;
+	}
+	.app-icon-big-wrapper img {
+		max-width: 100px;
+	}
+	.header-text h1 {
+		font-size: 3.2em;
+	}
+	.header-text p {
+		font-size: 1.2em;
+	}
+	.app-downloader-header {
+		padding: 15px;
+	}
+	.app-downloader-header-intro h1 {
+		font-size: 2em;
+	}
+	.app-downloader-content {
+		padding: 50px 25px 50px 25px;
+	}
+	.platform-item i {
+		font-size: 5em;
+	}
+	.console-process-msg {
+		font-size: 1.8em;
+	}
+}
+@media screen and (max-width: 400px) {
+	.header-text p {
+		font-size: 1em;
+	}
+	.processing-modal-wrapper, .verification-modal-wrapper {
+		width: 90%;
+	}
+	.header-text h1 {
+		font-size: 2.8em;
+		margin: 10px 0 15px 0;
+	}
+	.left-side-wrapper {
+		padding: 15px 20px 35px 20px;
+	}
+	.app-downloader-content {
+		padding: 25px 25px 25px 25px;
+	}
+	.downloader-status-wrapper {
+		position: relative;
+		margin: 12px auto 0 auto;
+	}
+	.status-row {
+		padding: 10px 20px;
+	}
+	.button-wrapper {
+		margin: 30px auto 0 auto;
+	}
+	.platform-item i {
+		font-size: 4em;
+	}
+	.console-process-msg {
+		font-size: 1.4em;
+	}
+	.app-downloader-header-intro h1 {
+		font-size: 1.6em;
+	}
+	.platform-item span {
+		font-size: 1.1em;
+	}
+	.console-process-msg-wrapper {
+		margin-top: 20px;
+	}
+	.console-process-loading-bar {
+		margin-top: 20px;
+	}
+	.verification-modal-wrapper .processing-content {
+		padding: 50px 25px 50px;
+		position: relative;
+	}
+}
+@media screen and (max-width: 360px) {
+	.header-text h1 {
+		font-size: 2.8em;
+	}
+	.header-text p {
+		font-size: 1em;
+	}
+	.app-downloader-content h1 {
+		font-size: 1.2em;
+	}
+	.platform-item i {
+		font-size: 4em;
+	}
+	.platform-item span {
+		font-size: 0.9em;
+	}
+	.button {
+		font-size: 1.1em;
+	}
+	.console-process-msg {
+		font-size: 1.3em;
+	}
+}
+@media screen and (max-width: 340px) {
+	.left-side-wrapper {
+		padding: 10px 20px 35px 20px;
+	}
+	.app-icon-big-wrapper img {
+		max-width: 80px;
+	}
+	.header-text h1 {
+		font-size: 2.4em;
+	}
+	.header-text p {
+		font-size: 0.9em;
+	}
+	.app-downloader-header-intro h1 {
+		font-size: 1.6em;
+	}
+	.console-process-msg {
+		font-size: 1.4em;
+	}
+	.verification-modal-wrapper .processing-content {
+		padding: 30px 20px;
+	}
+	.human-verification-wrapper p {
+		font-size: 1em;
+	}
+}
+@media screen and (max-width: 320px) {
+	.app-downloader-section {
+		padding: 5vh 0 40px 0;
+	}
+	.app-downloader-header {
+		padding: 20px 30px 40px;
+	}
+	.app-downloader-header-intro h1 {
+		font-size: 1.3em;
+	}
+	.app-icon-wrapper img {
+		max-width: 60px;
+	}
+	.app-downloader-content {
+		padding: 40px 25px 30px 25px;
+	}
+	.platform-select-wrapper p {
+		font-size: 1em;
+		letter-spacing: 1px;
+	}
+	.platform-item i {
+		font-size: 2em;
+	}
+	.platform-item span {
+		font-size: 0.9em;
+	}
+	.console-process-msg {
+		font-size: 1.2em;
+	}
+}
+/**************************
+
+Website Designed by CounterMind on Marketing-Rhino.com
+https://www.marketing-rhino.com/
+It is forbidden to re-sell this landing page without Author Permission.
+
+**************************/
